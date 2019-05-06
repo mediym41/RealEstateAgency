@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Museo Cyrl 700 2.otf">
+            <string>MuseoCyrl-700</string>
+        </array>
+        <array key="MuseoSans_500.otf">
+            <string>MuseoSans-500</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HouseDetailView" customModule="RealEstateAgency" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HouseDetailView" customModule="RealEstateAgency" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="230" height="138"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Og0-6m-lym">
+                    <rect key="frame" x="8" y="8" width="60" height="83"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Ew0-z8-QOh"/>
+                        <constraint firstAttribute="height" constant="83" id="FvX-aV-Cyp"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Academica Yangela 7" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMV-SU-h6Y">
+                    <rect key="frame" x="78" y="31" width="147" height="17"/>
+                    <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gaK-0w-Ynw">
+                    <rect key="frame" x="78" y="10" width="142" height="16"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTp-A8-FO3">
+                            <rect key="frame" x="0.0" y="0.0" width="61" height="16"/>
+                            <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="13"/>
+                            <color key="textColor" cyan="0.3071848452091217" magenta="0.2228800356388092" yellow="0.18298430740833282" black="0.39953903160750159" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rent" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2M-6z-mCM">
+                            <rect key="frame" x="81" y="0.0" width="61" height="16"/>
+                            <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="13"/>
+                            <color key="textColor" cyan="0.3071848452091217" magenta="0.2228800356388092" yellow="0.18298430740833282" black="0.40170330525615028" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost: $120000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHd-Y2-YRS">
+                    <rect key="frame" x="78" y="53" width="147" height="16"/>
+                    <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Square: 560 m2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4D-5H-RfS">
+                    <rect key="frame" x="78" y="74" width="147" height="16"/>
+                    <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diS-mz-QLT">
+                    <rect key="frame" x="8" y="100" width="214" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.83137254900000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" name="MuseoCyrl-700" family="Museo Cyrl" pointSize="15"/>
+                    <state key="normal" title="Show more">
+                        <color key="titleColor" cyan="0.01" magenta="0.1683975905" yellow="0.5982266665" black="0.554959168" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="showMoreButtonPressed" destination="iN0-l3-epB" eventType="touchUpInside" id="Ddj-Kv-Zb6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bMV-SU-h6Y" secondAttribute="trailing" constant="5" id="1ul-Qo-6g8"/>
+                <constraint firstItem="x4D-5H-RfS" firstAttribute="top" secondItem="SHd-Y2-YRS" secondAttribute="bottom" constant="5" id="9VO-Bn-HTB"/>
+                <constraint firstItem="x4D-5H-RfS" firstAttribute="leading" secondItem="Og0-6m-lym" secondAttribute="trailing" constant="10" id="BHS-Jl-Nbl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SHd-Y2-YRS" secondAttribute="trailing" constant="5" id="CP9-hW-Vg1"/>
+                <constraint firstItem="Og0-6m-lym" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="DWZ-zk-IPi"/>
+                <constraint firstItem="diS-mz-QLT" firstAttribute="top" secondItem="Og0-6m-lym" secondAttribute="bottom" constant="9" id="ENX-c9-z9e"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="x4D-5H-RfS" secondAttribute="trailing" constant="5" id="GwG-As-GVS"/>
+                <constraint firstItem="SHd-Y2-YRS" firstAttribute="leading" secondItem="Og0-6m-lym" secondAttribute="trailing" constant="10" id="Ic6-gv-Jag"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Og0-6m-lym" secondAttribute="bottom" constant="47" id="NiG-BX-pOm"/>
+                <constraint firstItem="bMV-SU-h6Y" firstAttribute="leading" secondItem="Og0-6m-lym" secondAttribute="trailing" constant="10" id="O2q-MP-NV4"/>
+                <constraint firstItem="bMV-SU-h6Y" firstAttribute="top" secondItem="gaK-0w-Ynw" secondAttribute="bottom" constant="5" id="Wpf-Do-pTC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="diS-mz-QLT" secondAttribute="trailing" constant="8" id="a85-lM-Ujb"/>
+                <constraint firstItem="gaK-0w-Ynw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="aKB-Hv-aDf"/>
+                <constraint firstItem="gaK-0w-Ynw" firstAttribute="leading" secondItem="Og0-6m-lym" secondAttribute="trailing" constant="10" id="aN5-hW-7ud"/>
+                <constraint firstItem="diS-mz-QLT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="cR3-jE-fjj"/>
+                <constraint firstItem="SHd-Y2-YRS" firstAttribute="top" secondItem="bMV-SU-h6Y" secondAttribute="bottom" constant="5" id="e8q-mD-teg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gaK-0w-Ynw" secondAttribute="trailing" constant="10" id="s3K-F8-i6k"/>
+                <constraint firstItem="Og0-6m-lym" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="sbA-Zc-tBs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="buyTypeLabel" destination="b2M-6z-mCM" id="GoO-w5-m0e"/>
+                <outlet property="costLabel" destination="SHd-Y2-YRS" id="Zzl-6Y-7iw"/>
+                <outlet property="houseImageView" destination="Og0-6m-lym" id="gRG-79-90F"/>
+                <outlet property="squareLabel" destination="x4D-5H-RfS" id="GTQ-od-PCe"/>
+                <outlet property="streetLabel" destination="bMV-SU-h6Y" id="W6K-ac-nuE"/>
+                <outlet property="typeLabel" destination="hTp-A8-FO3" id="6Dr-gc-9un"/>
+            </connections>
+            <point key="canvasLocation" x="259" y="-90"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Placeholder" width="256" height="256"/>
+    </resources>
+</document>

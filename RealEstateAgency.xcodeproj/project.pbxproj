@@ -1,0 +1,879 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D19CBA02242F03300EF8048 /* DetailedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19CB9F2242F03300EF8048 /* DetailedVC.swift */; };
+		1D247F15224050C8002A82AE /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D247F14224050C8002A82AE /* LocationSearchTable.swift */; };
+		1D247F1722406251002A82AE /* TransperentNavigationContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D247F1622406251002A82AE /* TransperentNavigationContoller.swift */; };
+		1D4C25C1223DA60800288DA3 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C25C0223DA60800288DA3 /* Property.swift */; };
+		1D4C25C3223DB43900288DA3 /* PropertyMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C25C2223DB43900288DA3 /* PropertyMarkerView.swift */; };
+		1D4E0D8A223EE51E009F09FA /* SelectableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4E0D89223EE51E009F09FA /* SelectableButton.swift */; };
+		1D5932F92242817C009A99D6 /* UserLocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5932F82242817C009A99D6 /* UserLocationAnnotation.swift */; };
+		1D5932FB22428920009A99D6 /* HouseDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D5932FA22428920009A99D6 /* HouseDetailView.xib */; };
+		1D5932FD224295AF009A99D6 /* HouseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5932FC224295AF009A99D6 /* HouseDetailView.swift */; };
+		1D67CDD4223C37C2004DD439 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDD3223C37C2004DD439 /* GoogleService-Info.plist */; };
+		1D67CE0D223C4158004DD439 /* Museo Cyrl 500 Italic 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDD7223C4158004DD439 /* Museo Cyrl 500 Italic 2.otf */; };
+		1D67CE0E223C4158004DD439 /* Museo Cyrl 500 Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDD8223C4158004DD439 /* Museo Cyrl 500 Italic.otf */; };
+		1D67CE0F223C4158004DD439 /* Museo Cyrl 300 Italic 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDD9223C4158004DD439 /* Museo Cyrl 300 Italic 2.otf */; };
+		1D67CE10223C4158004DD439 /* Museo Cyrl 300 Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDDA223C4158004DD439 /* Museo Cyrl 300 Italic.otf */; };
+		1D67CE11223C4158004DD439 /* Museo Cyrl 500 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDDB223C4158004DD439 /* Museo Cyrl 500 2.otf */; };
+		1D67CE12223C4158004DD439 /* Museo Cyrl 900 Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDDC223C4158004DD439 /* Museo Cyrl 900 Italic.otf */; };
+		1D67CE13223C4158004DD439 /* Museo Cyrl 700 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDDD223C4158004DD439 /* Museo Cyrl 700 2.otf */; };
+		1D67CE14223C4158004DD439 /* Museo Cyrl 900 Italic 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDDE223C4158004DD439 /* Museo Cyrl 900 Italic 2.otf */; };
+		1D67CE15223C4158004DD439 /* Museo Cyrl 100 Italic 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDDF223C4158004DD439 /* Museo Cyrl 100 Italic 2.otf */; };
+		1D67CE16223C4158004DD439 /* Museo Cyrl 300.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDE0223C4158004DD439 /* Museo Cyrl 300.otf */; };
+		1D67CE17223C4158004DD439 /* Museo Cyrl 700 Italic 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDE1223C4158004DD439 /* Museo Cyrl 700 Italic 2.otf */; };
+		1D67CE18223C4158004DD439 /* Museo Cyrl 100.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDE2223C4158004DD439 /* Museo Cyrl 100.otf */; };
+		1D67CE19223C4158004DD439 /* Museo Cyrl 300 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDE3223C4158004DD439 /* Museo Cyrl 300 2.otf */; };
+		1D67CE1A223C4158004DD439 /* Museo Cyrl 900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDE4223C4158004DD439 /* Museo Cyrl 900.otf */; };
+		1D67CE1B223C4158004DD439 /* Museo-Cyrl 700.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDE5223C4158004DD439 /* Museo-Cyrl 700.otf */; };
+		1D67CE1C223C4158004DD439 /* Museo-Cyrl 500.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDE6223C4158004DD439 /* Museo-Cyrl 500.otf */; };
+		1D67CE1D223C4158004DD439 /* Museo Cyrl 100 Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDE7223C4158004DD439 /* Museo Cyrl 100 Italic.otf */; };
+		1D67CE1E223C4158004DD439 /* Museo Cyrl 900 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDE8223C4158004DD439 /* Museo Cyrl 900 2.otf */; };
+		1D67CE1F223C4158004DD439 /* Museo Cyrl 100 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDE9223C4158004DD439 /* Museo Cyrl 100 2.otf */; };
+		1D67CE20223C4158004DD439 /* Museo Cyrl 700 Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDEA223C4158004DD439 /* Museo Cyrl 700 Italic.otf */; };
+		1D67CE21223C4158004DD439 /* Circe-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDEC223C4158004DD439 /* Circe-ExtraLight.ttf */; };
+		1D67CE22223C4158004DD439 /* Circe-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDED223C4158004DD439 /* Circe-Light.ttf */; };
+		1D67CE23223C4158004DD439 /* Circe-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDEE223C4158004DD439 /* Circe-ExtraBold.ttf */; };
+		1D67CE24223C4158004DD439 /* Circe-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDEF223C4158004DD439 /* Circe-Bold.ttf */; };
+		1D67CE25223C4158004DD439 /* Circe-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDF0223C4158004DD439 /* Circe-Thin.ttf */; };
+		1D67CE26223C4158004DD439 /* Circe-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDF1223C4158004DD439 /* Circe-Regular.ttf */; };
+		1D67CE27223C4158004DD439 /* MuseoSans-900Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDF3223C4158004DD439 /* MuseoSans-900Italic.otf */; };
+		1D67CE28223C4158004DD439 /* MuseoSans_700 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDF4223C4158004DD439 /* MuseoSans_700 2.otf */; };
+		1D67CE29223C4158004DD439 /* MuseoSans-300Italic 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDF5223C4158004DD439 /* MuseoSans-300Italic 2.otf */; };
+		1D67CE2A223C4158004DD439 /* MuseoSans-700Italic 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDF6223C4158004DD439 /* MuseoSans-700Italic 2.otf */; };
+		1D67CE2B223C4158004DD439 /* MuseoSans_900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDF7223C4158004DD439 /* MuseoSans_900.otf */; };
+		1D67CE2C223C4158004DD439 /* MuseoSans-900Italic 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDF8223C4158004DD439 /* MuseoSans-900Italic 2.otf */; };
+		1D67CE2D223C4158004DD439 /* MuseoSans300.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDF9223C4158004DD439 /* MuseoSans300.otf */; };
+		1D67CE2E223C4158004DD439 /* MuseoSans300 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDFA223C4158004DD439 /* MuseoSans300 2.otf */; };
+		1D67CE2F223C4158004DD439 /* MuseoSans-300Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDFB223C4158004DD439 /* MuseoSans-300Italic.otf */; };
+		1D67CE30223C4158004DD439 /* MuseoSans500.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDFC223C4158004DD439 /* MuseoSans500.otf */; };
+		1D67CE31223C4158004DD439 /* MuseoSans_500 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDFD223C4158004DD439 /* MuseoSans_500 2.otf */; };
+		1D67CE32223C4158004DD439 /* MuseoSans_500_Italic 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDFE223C4158004DD439 /* MuseoSans_500_Italic 2.otf */; };
+		1D67CE33223C4158004DD439 /* Museo-Sans 300.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CDFF223C4158004DD439 /* Museo-Sans 300.otf */; };
+		1D67CE34223C4158004DD439 /* MuseoSans-100 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CE00223C4158004DD439 /* MuseoSans-100 2.otf */; };
+		1D67CE35223C4158004DD439 /* MuseoSans_900 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CE01223C4158004DD439 /* MuseoSans_900 2.otf */; };
+		1D67CE36223C4158004DD439 /* MuseoSans-100 3.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CE02223C4158004DD439 /* MuseoSans-100 3.otf */; };
+		1D67CE37223C4158004DD439 /* MuseoSans-100.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CE03223C4158004DD439 /* MuseoSans-100.otf */; };
+		1D67CE38223C4158004DD439 /* MuseoSans-100 4.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CE04223C4158004DD439 /* MuseoSans-100 4.otf */; };
+		1D67CE39223C4158004DD439 /* MuseoSans-100Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CE05223C4158004DD439 /* MuseoSans-100Italic.otf */; };
+		1D67CE3A223C4158004DD439 /* MuseoSans_500.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CE06223C4158004DD439 /* MuseoSans_500.otf */; };
+		1D67CE3B223C4158004DD439 /* MuseoSans_500_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CE07223C4158004DD439 /* MuseoSans_500_Italic.otf */; };
+		1D67CE3C223C4158004DD439 /* MuseoSans_700.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CE08223C4158004DD439 /* MuseoSans_700.otf */; };
+		1D67CE3D223C4158004DD439 /* MuseoSans-100Italic 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CE09223C4158004DD439 /* MuseoSans-100Italic 2.otf */; };
+		1D67CE3E223C4158004DD439 /* MuseoSans-300 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CE0A223C4158004DD439 /* MuseoSans-300 2.otf */; };
+		1D67CE3F223C4158004DD439 /* MuseoSans500 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CE0B223C4158004DD439 /* MuseoSans500 2.otf */; };
+		1D67CE40223C4158004DD439 /* MuseoSans-700Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1D67CE0C223C4158004DD439 /* MuseoSans-700Italic.otf */; };
+		1D67CE42223C423A004DD439 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D67CE41223C423A004DD439 /* UnderlinedTextField.swift */; };
+		1D67CE44223C424C004DD439 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D67CE43223C424C004DD439 /* Validators.swift */; };
+		1D67CE4A223C426B004DD439 /* Extension+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D67CE47223C426B004DD439 /* Extension+Foundation.swift */; };
+		1D67CE4B223C426B004DD439 /* Extension+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D67CE48223C426B004DD439 /* Extension+UIKit.swift */; };
+		1D79C628223BCA4A00EEC951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D79C627223BCA4A00EEC951 /* AppDelegate.swift */; };
+		1D79C62D223BCA4A00EEC951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D79C62B223BCA4A00EEC951 /* Main.storyboard */; };
+		1D79C632223BCA4B00EEC951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D79C630223BCA4B00EEC951 /* LaunchScreen.storyboard */; };
+		1D8A868C223C539800A939EE /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8A868B223C539800A939EE /* MapVC.swift */; };
+		1D8A868E223C563000A939EE /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8A868D223C563000A939EE /* SignInVC.swift */; };
+		1D8A8690223C563900A939EE /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8A868F223C563900A939EE /* SignUpVC.swift */; };
+		1D984D0A223C4489004D8D60 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D984D09223C4488004D8D60 /* AppStoryboard.swift */; };
+		1D9AA17F2243DA8F006E3DD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D9AA17E2243DA8E006E3DD4 /* Assets.xcassets */; };
+		1DA6F3DB227F0CD30090EF89 /* AddingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA6F3DA227F0CD30090EF89 /* AddingVC.swift */; };
+		1DD1D6122241C10600A86D75 /* SearchAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD1D6112241C10600A86D75 /* SearchAnnotation.swift */; };
+		1DD6111A224541C200FF227D /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD61119224541C200FF227D /* AppManager.swift */; };
+		1DEC0F332242C57F00B7CDC4 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC0F322242C57F00B7CDC4 /* TriangleView.swift */; };
+		1DEF0B67223EC5F80015C2C3 /* ClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF0B66223EC5F80015C2C3 /* ClusterAnnotationView.swift */; };
+		1DEF0B6D223ED7940015C2C3 /* FilterCardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DEF0B6B223ED7930015C2C3 /* FilterCardVC.xib */; };
+		1DEF0B71223ED9E10015C2C3 /* FilterCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF0B6F223ED9E10015C2C3 /* FilterCardVC.swift */; };
+		1DEF0B72223ED9E10015C2C3 /* CardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF0B70223ED9E10015C2C3 /* CardVC.swift */; };
+		1DEF0B76223EDEE30015C2C3 /* CheckButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF0B75223EDEE30015C2C3 /* CheckButtons.swift */; };
+		1DEF0B78223EE3DA0015C2C3 /* VerticalPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF0B77223EE3DA0015C2C3 /* VerticalPanGestureRecognizer.swift */; };
+		481CD8721C7F7BF1F62F83E0 /* Pods_RealEstateAgency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A11B3A61D190EB60F0F61D /* Pods_RealEstateAgency.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09A11B3A61D190EB60F0F61D /* Pods_RealEstateAgency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealEstateAgency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D19CB9F2242F03300EF8048 /* DetailedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedVC.swift; sourceTree = "<group>"; };
+		1D247F14224050C8002A82AE /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
+		1D247F1622406251002A82AE /* TransperentNavigationContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransperentNavigationContoller.swift; sourceTree = "<group>"; };
+		1D4C25C0223DA60800288DA3 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		1D4C25C2223DB43900288DA3 /* PropertyMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyMarkerView.swift; sourceTree = "<group>"; };
+		1D4E0D89223EE51E009F09FA /* SelectableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableButton.swift; sourceTree = "<group>"; };
+		1D5932F82242817C009A99D6 /* UserLocationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationAnnotation.swift; sourceTree = "<group>"; };
+		1D5932FA22428920009A99D6 /* HouseDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseDetailView.xib; sourceTree = "<group>"; };
+		1D5932FC224295AF009A99D6 /* HouseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailView.swift; sourceTree = "<group>"; };
+		1D67CDD3223C37C2004DD439 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1D67CDD7223C4158004DD439 /* Museo Cyrl 500 Italic 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo Cyrl 500 Italic 2.otf"; sourceTree = "<group>"; };
+		1D67CDD8223C4158004DD439 /* Museo Cyrl 500 Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo Cyrl 500 Italic.otf"; sourceTree = "<group>"; };
+		1D67CDD9223C4158004DD439 /* Museo Cyrl 300 Italic 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo Cyrl 300 Italic 2.otf"; sourceTree = "<group>"; };
+		1D67CDDA223C4158004DD439 /* Museo Cyrl 300 Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo Cyrl 300 Italic.otf"; sourceTree = "<group>"; };
+		1D67CDDB223C4158004DD439 /* Museo Cyrl 500 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo Cyrl 500 2.otf"; sourceTree = "<group>"; };
+		1D67CDDC223C4158004DD439 /* Museo Cyrl 900 Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo Cyrl 900 Italic.otf"; sourceTree = "<group>"; };
+		1D67CDDD223C4158004DD439 /* Museo Cyrl 700 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo Cyrl 700 2.otf"; sourceTree = "<group>"; };
+		1D67CDDE223C4158004DD439 /* Museo Cyrl 900 Italic 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo Cyrl 900 Italic 2.otf"; sourceTree = "<group>"; };
+		1D67CDDF223C4158004DD439 /* Museo Cyrl 100 Italic 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo Cyrl 100 Italic 2.otf"; sourceTree = "<group>"; };
+		1D67CDE0223C4158004DD439 /* Museo Cyrl 300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo Cyrl 300.otf"; sourceTree = "<group>"; };
+		1D67CDE1223C4158004DD439 /* Museo Cyrl 700 Italic 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo Cyrl 700 Italic 2.otf"; sourceTree = "<group>"; };
+		1D67CDE2223C4158004DD439 /* Museo Cyrl 100.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo Cyrl 100.otf"; sourceTree = "<group>"; };
+		1D67CDE3223C4158004DD439 /* Museo Cyrl 300 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo Cyrl 300 2.otf"; sourceTree = "<group>"; };
+		1D67CDE4223C4158004DD439 /* Museo Cyrl 900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo Cyrl 900.otf"; sourceTree = "<group>"; };
+		1D67CDE5223C4158004DD439 /* Museo-Cyrl 700.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo-Cyrl 700.otf"; sourceTree = "<group>"; };
+		1D67CDE6223C4158004DD439 /* Museo-Cyrl 500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo-Cyrl 500.otf"; sourceTree = "<group>"; };
+		1D67CDE7223C4158004DD439 /* Museo Cyrl 100 Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo Cyrl 100 Italic.otf"; sourceTree = "<group>"; };
+		1D67CDE8223C4158004DD439 /* Museo Cyrl 900 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo Cyrl 900 2.otf"; sourceTree = "<group>"; };
+		1D67CDE9223C4158004DD439 /* Museo Cyrl 100 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo Cyrl 100 2.otf"; sourceTree = "<group>"; };
+		1D67CDEA223C4158004DD439 /* Museo Cyrl 700 Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo Cyrl 700 Italic.otf"; sourceTree = "<group>"; };
+		1D67CDEC223C4158004DD439 /* Circe-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Circe-ExtraLight.ttf"; sourceTree = "<group>"; };
+		1D67CDED223C4158004DD439 /* Circe-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Circe-Light.ttf"; sourceTree = "<group>"; };
+		1D67CDEE223C4158004DD439 /* Circe-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Circe-ExtraBold.ttf"; sourceTree = "<group>"; };
+		1D67CDEF223C4158004DD439 /* Circe-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Circe-Bold.ttf"; sourceTree = "<group>"; };
+		1D67CDF0223C4158004DD439 /* Circe-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Circe-Thin.ttf"; sourceTree = "<group>"; };
+		1D67CDF1223C4158004DD439 /* Circe-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Circe-Regular.ttf"; sourceTree = "<group>"; };
+		1D67CDF3223C4158004DD439 /* MuseoSans-900Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-900Italic.otf"; sourceTree = "<group>"; };
+		1D67CDF4223C4158004DD439 /* MuseoSans_700 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans_700 2.otf"; sourceTree = "<group>"; };
+		1D67CDF5223C4158004DD439 /* MuseoSans-300Italic 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-300Italic 2.otf"; sourceTree = "<group>"; };
+		1D67CDF6223C4158004DD439 /* MuseoSans-700Italic 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-700Italic 2.otf"; sourceTree = "<group>"; };
+		1D67CDF7223C4158004DD439 /* MuseoSans_900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_900.otf; sourceTree = "<group>"; };
+		1D67CDF8223C4158004DD439 /* MuseoSans-900Italic 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-900Italic 2.otf"; sourceTree = "<group>"; };
+		1D67CDF9223C4158004DD439 /* MuseoSans300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans300.otf; sourceTree = "<group>"; };
+		1D67CDFA223C4158004DD439 /* MuseoSans300 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans300 2.otf"; sourceTree = "<group>"; };
+		1D67CDFB223C4158004DD439 /* MuseoSans-300Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-300Italic.otf"; sourceTree = "<group>"; };
+		1D67CDFC223C4158004DD439 /* MuseoSans500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans500.otf; sourceTree = "<group>"; };
+		1D67CDFD223C4158004DD439 /* MuseoSans_500 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans_500 2.otf"; sourceTree = "<group>"; };
+		1D67CDFE223C4158004DD439 /* MuseoSans_500_Italic 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans_500_Italic 2.otf"; sourceTree = "<group>"; };
+		1D67CDFF223C4158004DD439 /* Museo-Sans 300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Museo-Sans 300.otf"; sourceTree = "<group>"; };
+		1D67CE00223C4158004DD439 /* MuseoSans-100 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-100 2.otf"; sourceTree = "<group>"; };
+		1D67CE01223C4158004DD439 /* MuseoSans_900 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans_900 2.otf"; sourceTree = "<group>"; };
+		1D67CE02223C4158004DD439 /* MuseoSans-100 3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-100 3.otf"; sourceTree = "<group>"; };
+		1D67CE03223C4158004DD439 /* MuseoSans-100.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-100.otf"; sourceTree = "<group>"; };
+		1D67CE04223C4158004DD439 /* MuseoSans-100 4.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-100 4.otf"; sourceTree = "<group>"; };
+		1D67CE05223C4158004DD439 /* MuseoSans-100Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-100Italic.otf"; sourceTree = "<group>"; };
+		1D67CE06223C4158004DD439 /* MuseoSans_500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_500.otf; sourceTree = "<group>"; };
+		1D67CE07223C4158004DD439 /* MuseoSans_500_Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_500_Italic.otf; sourceTree = "<group>"; };
+		1D67CE08223C4158004DD439 /* MuseoSans_700.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuseoSans_700.otf; sourceTree = "<group>"; };
+		1D67CE09223C4158004DD439 /* MuseoSans-100Italic 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-100Italic 2.otf"; sourceTree = "<group>"; };
+		1D67CE0A223C4158004DD439 /* MuseoSans-300 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-300 2.otf"; sourceTree = "<group>"; };
+		1D67CE0B223C4158004DD439 /* MuseoSans500 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans500 2.otf"; sourceTree = "<group>"; };
+		1D67CE0C223C4158004DD439 /* MuseoSans-700Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-700Italic.otf"; sourceTree = "<group>"; };
+		1D67CE41223C423A004DD439 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
+		1D67CE43223C424C004DD439 /* Validators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		1D67CE47223C426B004DD439 /* Extension+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Foundation.swift"; sourceTree = "<group>"; };
+		1D67CE48223C426B004DD439 /* Extension+UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIKit.swift"; sourceTree = "<group>"; };
+		1D79C624223BCA4A00EEC951 /* RealEstateAgency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealEstateAgency.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D79C627223BCA4A00EEC951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D79C62C223BCA4A00EEC951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D79C631223BCA4B00EEC951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D79C633223BCA4B00EEC951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D8A868B223C539800A939EE /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		1D8A868D223C563000A939EE /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		1D8A868F223C563900A939EE /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		1D8A8691223C580E00A939EE /* RealEstateAgency.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RealEstateAgency.entitlements; sourceTree = "<group>"; };
+		1D984D09223C4488004D8D60 /* AppStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
+		1D9AA17E2243DA8E006E3DD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1DA6F3DA227F0CD30090EF89 /* AddingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingVC.swift; sourceTree = "<group>"; };
+		1DD1D6112241C10600A86D75 /* SearchAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAnnotation.swift; sourceTree = "<group>"; };
+		1DD61119224541C200FF227D /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		1DEC0F322242C57F00B7CDC4 /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
+		1DEF0B66223EC5F80015C2C3 /* ClusterAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterAnnotationView.swift; sourceTree = "<group>"; };
+		1DEF0B6B223ED7930015C2C3 /* FilterCardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterCardVC.xib; sourceTree = "<group>"; };
+		1DEF0B6F223ED9E10015C2C3 /* FilterCardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCardVC.swift; sourceTree = "<group>"; };
+		1DEF0B70223ED9E10015C2C3 /* CardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardVC.swift; sourceTree = "<group>"; };
+		1DEF0B75223EDEE30015C2C3 /* CheckButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButtons.swift; sourceTree = "<group>"; };
+		1DEF0B77223EE3DA0015C2C3 /* VerticalPanGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalPanGestureRecognizer.swift; sourceTree = "<group>"; };
+		C6D4B6FECA3527487D1BE2E8 /* Pods-RealEstateAgency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateAgency.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealEstateAgency/Pods-RealEstateAgency.release.xcconfig"; sourceTree = "<group>"; };
+		FB982A26CCA8E0316113D76A /* Pods-RealEstateAgency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateAgency.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealEstateAgency/Pods-RealEstateAgency.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D79C621223BCA4900EEC951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				481CD8721C7F7BF1F62F83E0 /* Pods_RealEstateAgency.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D4C25BF223DA5DE00288DA3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1D4C25C0223DA60800288DA3 /* Property.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1D5932F722427984009A99D6 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				1D4C25C2223DB43900288DA3 /* PropertyMarkerView.swift */,
+				1DEF0B66223EC5F80015C2C3 /* ClusterAnnotationView.swift */,
+				1DD1D6112241C10600A86D75 /* SearchAnnotation.swift */,
+				1D5932F82242817C009A99D6 /* UserLocationAnnotation.swift */,
+			);
+			path = Annotations;
+			sourceTree = "<group>";
+		};
+		1D67CDCC223BCEA7004DD439 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D9AA17E2243DA8E006E3DD4 /* Assets.xcassets */,
+				1D67CDD5223C4158004DD439 /* fonts */,
+				1D67CDD3223C37C2004DD439 /* GoogleService-Info.plist */,
+				1D79C633223BCA4B00EEC951 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1D67CDCD223BCEC4004DD439 /* View Contoller */ = {
+			isa = PBXGroup;
+			children = (
+				1DEF0B6E223ED9E10015C2C3 /* CardsVC */,
+				1D8A868B223C539800A939EE /* MapVC.swift */,
+				1D8A868D223C563000A939EE /* SignInVC.swift */,
+				1D8A868F223C563900A939EE /* SignUpVC.swift */,
+				1D247F14224050C8002A82AE /* LocationSearchTable.swift */,
+				1D247F1622406251002A82AE /* TransperentNavigationContoller.swift */,
+				1D19CB9F2242F03300EF8048 /* DetailedVC.swift */,
+				1DA6F3DA227F0CD30090EF89 /* AddingVC.swift */,
+			);
+			path = "View Contoller";
+			sourceTree = "<group>";
+		};
+		1D67CDCE223BCED0004DD439 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D67CDD0223BCEE8004DD439 /* Storyboards */,
+				1D5932F722427984009A99D6 /* Annotations */,
+				1D67CE41223C423A004DD439 /* UnderlinedTextField.swift */,
+				1DEF0B75223EDEE30015C2C3 /* CheckButtons.swift */,
+				1DEF0B77223EE3DA0015C2C3 /* VerticalPanGestureRecognizer.swift */,
+				1D4E0D89223EE51E009F09FA /* SelectableButton.swift */,
+				1D5932FC224295AF009A99D6 /* HouseDetailView.swift */,
+				1DEC0F322242C57F00B7CDC4 /* TriangleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1D67CDCF223BCEDE004DD439 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1D4C25BF223DA5DE00288DA3 /* Data */,
+				1D67CE43223C424C004DD439 /* Validators.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1D67CDD0223BCEE8004DD439 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1D5932FA22428920009A99D6 /* HouseDetailView.xib */,
+				1DEF0B6B223ED7930015C2C3 /* FilterCardVC.xib */,
+				1D79C630223BCA4B00EEC951 /* LaunchScreen.storyboard */,
+				1D79C62B223BCA4A00EEC951 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1D67CDD5223C4158004DD439 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1D67CDD6223C4158004DD439 /* Museo Cyrl */,
+				1D67CDEB223C4158004DD439 /* Circle */,
+				1D67CDF2223C4158004DD439 /* Museo Sans */,
+			);
+			name = fonts;
+			path = assets/fonts;
+			sourceTree = SOURCE_ROOT;
+		};
+		1D67CDD6223C4158004DD439 /* Museo Cyrl */ = {
+			isa = PBXGroup;
+			children = (
+				1D67CDD7223C4158004DD439 /* Museo Cyrl 500 Italic 2.otf */,
+				1D67CDD8223C4158004DD439 /* Museo Cyrl 500 Italic.otf */,
+				1D67CDD9223C4158004DD439 /* Museo Cyrl 300 Italic 2.otf */,
+				1D67CDDA223C4158004DD439 /* Museo Cyrl 300 Italic.otf */,
+				1D67CDDB223C4158004DD439 /* Museo Cyrl 500 2.otf */,
+				1D67CDDC223C4158004DD439 /* Museo Cyrl 900 Italic.otf */,
+				1D67CDDD223C4158004DD439 /* Museo Cyrl 700 2.otf */,
+				1D67CDDE223C4158004DD439 /* Museo Cyrl 900 Italic 2.otf */,
+				1D67CDDF223C4158004DD439 /* Museo Cyrl 100 Italic 2.otf */,
+				1D67CDE0223C4158004DD439 /* Museo Cyrl 300.otf */,
+				1D67CDE1223C4158004DD439 /* Museo Cyrl 700 Italic 2.otf */,
+				1D67CDE2223C4158004DD439 /* Museo Cyrl 100.otf */,
+				1D67CDE3223C4158004DD439 /* Museo Cyrl 300 2.otf */,
+				1D67CDE4223C4158004DD439 /* Museo Cyrl 900.otf */,
+				1D67CDE5223C4158004DD439 /* Museo-Cyrl 700.otf */,
+				1D67CDE6223C4158004DD439 /* Museo-Cyrl 500.otf */,
+				1D67CDE7223C4158004DD439 /* Museo Cyrl 100 Italic.otf */,
+				1D67CDE8223C4158004DD439 /* Museo Cyrl 900 2.otf */,
+				1D67CDE9223C4158004DD439 /* Museo Cyrl 100 2.otf */,
+				1D67CDEA223C4158004DD439 /* Museo Cyrl 700 Italic.otf */,
+			);
+			path = "Museo Cyrl";
+			sourceTree = "<group>";
+		};
+		1D67CDEB223C4158004DD439 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				1D67CDEC223C4158004DD439 /* Circe-ExtraLight.ttf */,
+				1D67CDED223C4158004DD439 /* Circe-Light.ttf */,
+				1D67CDEE223C4158004DD439 /* Circe-ExtraBold.ttf */,
+				1D67CDEF223C4158004DD439 /* Circe-Bold.ttf */,
+				1D67CDF0223C4158004DD439 /* Circe-Thin.ttf */,
+				1D67CDF1223C4158004DD439 /* Circe-Regular.ttf */,
+			);
+			path = Circle;
+			sourceTree = "<group>";
+		};
+		1D67CDF2223C4158004DD439 /* Museo Sans */ = {
+			isa = PBXGroup;
+			children = (
+				1D67CDF3223C4158004DD439 /* MuseoSans-900Italic.otf */,
+				1D67CDF4223C4158004DD439 /* MuseoSans_700 2.otf */,
+				1D67CDF5223C4158004DD439 /* MuseoSans-300Italic 2.otf */,
+				1D67CDF6223C4158004DD439 /* MuseoSans-700Italic 2.otf */,
+				1D67CDF7223C4158004DD439 /* MuseoSans_900.otf */,
+				1D67CDF8223C4158004DD439 /* MuseoSans-900Italic 2.otf */,
+				1D67CDF9223C4158004DD439 /* MuseoSans300.otf */,
+				1D67CDFA223C4158004DD439 /* MuseoSans300 2.otf */,
+				1D67CDFB223C4158004DD439 /* MuseoSans-300Italic.otf */,
+				1D67CDFC223C4158004DD439 /* MuseoSans500.otf */,
+				1D67CDFD223C4158004DD439 /* MuseoSans_500 2.otf */,
+				1D67CDFE223C4158004DD439 /* MuseoSans_500_Italic 2.otf */,
+				1D67CDFF223C4158004DD439 /* Museo-Sans 300.otf */,
+				1D67CE00223C4158004DD439 /* MuseoSans-100 2.otf */,
+				1D67CE01223C4158004DD439 /* MuseoSans_900 2.otf */,
+				1D67CE02223C4158004DD439 /* MuseoSans-100 3.otf */,
+				1D67CE03223C4158004DD439 /* MuseoSans-100.otf */,
+				1D67CE04223C4158004DD439 /* MuseoSans-100 4.otf */,
+				1D67CE05223C4158004DD439 /* MuseoSans-100Italic.otf */,
+				1D67CE06223C4158004DD439 /* MuseoSans_500.otf */,
+				1D67CE07223C4158004DD439 /* MuseoSans_500_Italic.otf */,
+				1D67CE08223C4158004DD439 /* MuseoSans_700.otf */,
+				1D67CE09223C4158004DD439 /* MuseoSans-100Italic 2.otf */,
+				1D67CE0A223C4158004DD439 /* MuseoSans-300 2.otf */,
+				1D67CE0B223C4158004DD439 /* MuseoSans500 2.otf */,
+				1D67CE0C223C4158004DD439 /* MuseoSans-700Italic.otf */,
+			);
+			path = "Museo Sans";
+			sourceTree = "<group>";
+		};
+		1D67CE45223C426B004DD439 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1D67CE47223C426B004DD439 /* Extension+Foundation.swift */,
+				1D67CE48223C426B004DD439 /* Extension+UIKit.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1D79C61B223BCA4900EEC951 = {
+			isa = PBXGroup;
+			children = (
+				1D79C626223BCA4A00EEC951 /* RealEstateAgency */,
+				1D79C625223BCA4A00EEC951 /* Products */,
+				70B0AB579B96C28675101AC8 /* Pods */,
+				FC04AD64F8DBF0DA8D0F7CE3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1D79C625223BCA4A00EEC951 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D79C624223BCA4A00EEC951 /* RealEstateAgency.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D79C626223BCA4A00EEC951 /* RealEstateAgency */ = {
+			isa = PBXGroup;
+			children = (
+				1D8A8691223C580E00A939EE /* RealEstateAgency.entitlements */,
+				1D67CE45223C426B004DD439 /* Extensions */,
+				1D67CDCF223BCEDE004DD439 /* Model */,
+				1D67CDCE223BCED0004DD439 /* View */,
+				1D67CDCD223BCEC4004DD439 /* View Contoller */,
+				1D67CDCC223BCEA7004DD439 /* Supporting Files */,
+				1D79C627223BCA4A00EEC951 /* AppDelegate.swift */,
+				1D984D09223C4488004D8D60 /* AppStoryboard.swift */,
+				1DD61119224541C200FF227D /* AppManager.swift */,
+			);
+			path = RealEstateAgency;
+			sourceTree = "<group>";
+		};
+		1DEF0B6E223ED9E10015C2C3 /* CardsVC */ = {
+			isa = PBXGroup;
+			children = (
+				1DEF0B6F223ED9E10015C2C3 /* FilterCardVC.swift */,
+				1DEF0B70223ED9E10015C2C3 /* CardVC.swift */,
+			);
+			path = CardsVC;
+			sourceTree = "<group>";
+		};
+		70B0AB579B96C28675101AC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB982A26CCA8E0316113D76A /* Pods-RealEstateAgency.debug.xcconfig */,
+				C6D4B6FECA3527487D1BE2E8 /* Pods-RealEstateAgency.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC04AD64F8DBF0DA8D0F7CE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09A11B3A61D190EB60F0F61D /* Pods_RealEstateAgency.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D79C623223BCA4900EEC951 /* RealEstateAgency */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D79C636223BCA4B00EEC951 /* Build configuration list for PBXNativeTarget "RealEstateAgency" */;
+			buildPhases = (
+				E23194DD5AFFCA4D25FE3512 /* [CP] Check Pods Manifest.lock */,
+				1D79C620223BCA4900EEC951 /* Sources */,
+				1D79C621223BCA4900EEC951 /* Frameworks */,
+				1D79C622223BCA4900EEC951 /* Resources */,
+				0CB3A6F5FFD880C03D5C044C /* [CP] Embed Pods Frameworks */,
+				43B0617FA1391ADF4B0DD361 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealEstateAgency;
+			productName = RealEstateAgency;
+			productReference = 1D79C624223BCA4A00EEC951 /* RealEstateAgency.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D79C61C223BCA4900EEC951 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = NSMedium;
+				TargetAttributes = {
+					1D79C623223BCA4900EEC951 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 1D79C61F223BCA4900EEC951 /* Build configuration list for PBXProject "RealEstateAgency" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D79C61B223BCA4900EEC951;
+			productRefGroup = 1D79C625223BCA4A00EEC951 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D79C623223BCA4900EEC951 /* RealEstateAgency */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D79C622223BCA4900EEC951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D67CE22223C4158004DD439 /* Circe-Light.ttf in Resources */,
+				1D67CE20223C4158004DD439 /* Museo Cyrl 700 Italic.otf in Resources */,
+				1D67CE24223C4158004DD439 /* Circe-Bold.ttf in Resources */,
+				1D67CE37223C4158004DD439 /* MuseoSans-100.otf in Resources */,
+				1D67CE21223C4158004DD439 /* Circe-ExtraLight.ttf in Resources */,
+				1D67CE35223C4158004DD439 /* MuseoSans_900 2.otf in Resources */,
+				1D67CE39223C4158004DD439 /* MuseoSans-100Italic.otf in Resources */,
+				1D67CE34223C4158004DD439 /* MuseoSans-100 2.otf in Resources */,
+				1D67CE3C223C4158004DD439 /* MuseoSans_700.otf in Resources */,
+				1D67CE2E223C4158004DD439 /* MuseoSans300 2.otf in Resources */,
+				1D67CE12223C4158004DD439 /* Museo Cyrl 900 Italic.otf in Resources */,
+				1D67CE1F223C4158004DD439 /* Museo Cyrl 100 2.otf in Resources */,
+				1D79C632223BCA4B00EEC951 /* LaunchScreen.storyboard in Resources */,
+				1D67CE1D223C4158004DD439 /* Museo Cyrl 100 Italic.otf in Resources */,
+				1D67CE1C223C4158004DD439 /* Museo-Cyrl 500.otf in Resources */,
+				1D67CE32223C4158004DD439 /* MuseoSans_500_Italic 2.otf in Resources */,
+				1D67CE36223C4158004DD439 /* MuseoSans-100 3.otf in Resources */,
+				1D67CE3A223C4158004DD439 /* MuseoSans_500.otf in Resources */,
+				1D67CE14223C4158004DD439 /* Museo Cyrl 900 Italic 2.otf in Resources */,
+				1D67CDD4223C37C2004DD439 /* GoogleService-Info.plist in Resources */,
+				1D67CE2D223C4158004DD439 /* MuseoSans300.otf in Resources */,
+				1D67CE31223C4158004DD439 /* MuseoSans_500 2.otf in Resources */,
+				1D67CE15223C4158004DD439 /* Museo Cyrl 100 Italic 2.otf in Resources */,
+				1D67CE13223C4158004DD439 /* Museo Cyrl 700 2.otf in Resources */,
+				1D67CE17223C4158004DD439 /* Museo Cyrl 700 Italic 2.otf in Resources */,
+				1D67CE0E223C4158004DD439 /* Museo Cyrl 500 Italic.otf in Resources */,
+				1D9AA17F2243DA8F006E3DD4 /* Assets.xcassets in Resources */,
+				1D67CE3F223C4158004DD439 /* MuseoSans500 2.otf in Resources */,
+				1D67CE0F223C4158004DD439 /* Museo Cyrl 300 Italic 2.otf in Resources */,
+				1DEF0B6D223ED7940015C2C3 /* FilterCardVC.xib in Resources */,
+				1D67CE3B223C4158004DD439 /* MuseoSans_500_Italic.otf in Resources */,
+				1D67CE30223C4158004DD439 /* MuseoSans500.otf in Resources */,
+				1D67CE40223C4158004DD439 /* MuseoSans-700Italic.otf in Resources */,
+				1D5932FB22428920009A99D6 /* HouseDetailView.xib in Resources */,
+				1D67CE28223C4158004DD439 /* MuseoSans_700 2.otf in Resources */,
+				1D67CE38223C4158004DD439 /* MuseoSans-100 4.otf in Resources */,
+				1D67CE23223C4158004DD439 /* Circe-ExtraBold.ttf in Resources */,
+				1D67CE3D223C4158004DD439 /* MuseoSans-100Italic 2.otf in Resources */,
+				1D67CE1B223C4158004DD439 /* Museo-Cyrl 700.otf in Resources */,
+				1D67CE10223C4158004DD439 /* Museo Cyrl 300 Italic.otf in Resources */,
+				1D67CE25223C4158004DD439 /* Circe-Thin.ttf in Resources */,
+				1D67CE3E223C4158004DD439 /* MuseoSans-300 2.otf in Resources */,
+				1D67CE1E223C4158004DD439 /* Museo Cyrl 900 2.otf in Resources */,
+				1D67CE1A223C4158004DD439 /* Museo Cyrl 900.otf in Resources */,
+				1D67CE0D223C4158004DD439 /* Museo Cyrl 500 Italic 2.otf in Resources */,
+				1D67CE19223C4158004DD439 /* Museo Cyrl 300 2.otf in Resources */,
+				1D67CE29223C4158004DD439 /* MuseoSans-300Italic 2.otf in Resources */,
+				1D67CE2F223C4158004DD439 /* MuseoSans-300Italic.otf in Resources */,
+				1D67CE11223C4158004DD439 /* Museo Cyrl 500 2.otf in Resources */,
+				1D67CE18223C4158004DD439 /* Museo Cyrl 100.otf in Resources */,
+				1D67CE27223C4158004DD439 /* MuseoSans-900Italic.otf in Resources */,
+				1D79C62D223BCA4A00EEC951 /* Main.storyboard in Resources */,
+				1D67CE2B223C4158004DD439 /* MuseoSans_900.otf in Resources */,
+				1D67CE2C223C4158004DD439 /* MuseoSans-900Italic 2.otf in Resources */,
+				1D67CE26223C4158004DD439 /* Circe-Regular.ttf in Resources */,
+				1D67CE2A223C4158004DD439 /* MuseoSans-700Italic 2.otf in Resources */,
+				1D67CE16223C4158004DD439 /* Museo Cyrl 300.otf in Resources */,
+				1D67CE33223C4158004DD439 /* Museo-Sans 300.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CB3A6F5FFD880C03D5C044C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RealEstateAgency/Pods-RealEstateAgency-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/TTRangeSlider/TTRangeSlider.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTRangeSlider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealEstateAgency/Pods-RealEstateAgency-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43B0617FA1391ADF4B0DD361 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RealEstateAgency/Pods-RealEstateAgency-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/gRPCCertificates-Firestore.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates-Firestore.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealEstateAgency/Pods-RealEstateAgency-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E23194DD5AFFCA4D25FE3512 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealEstateAgency-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D79C620223BCA4900EEC951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D4C25C1223DA60800288DA3 /* Property.swift in Sources */,
+				1DD6111A224541C200FF227D /* AppManager.swift in Sources */,
+				1DEF0B78223EE3DA0015C2C3 /* VerticalPanGestureRecognizer.swift in Sources */,
+				1D5932FD224295AF009A99D6 /* HouseDetailView.swift in Sources */,
+				1D984D0A223C4489004D8D60 /* AppStoryboard.swift in Sources */,
+				1D247F15224050C8002A82AE /* LocationSearchTable.swift in Sources */,
+				1DEF0B67223EC5F80015C2C3 /* ClusterAnnotationView.swift in Sources */,
+				1D247F1722406251002A82AE /* TransperentNavigationContoller.swift in Sources */,
+				1D67CE4B223C426B004DD439 /* Extension+UIKit.swift in Sources */,
+				1D19CBA02242F03300EF8048 /* DetailedVC.swift in Sources */,
+				1D5932F92242817C009A99D6 /* UserLocationAnnotation.swift in Sources */,
+				1D8A868E223C563000A939EE /* SignInVC.swift in Sources */,
+				1D67CE44223C424C004DD439 /* Validators.swift in Sources */,
+				1DA6F3DB227F0CD30090EF89 /* AddingVC.swift in Sources */,
+				1D4C25C3223DB43900288DA3 /* PropertyMarkerView.swift in Sources */,
+				1D67CE42223C423A004DD439 /* UnderlinedTextField.swift in Sources */,
+				1DEF0B72223ED9E10015C2C3 /* CardVC.swift in Sources */,
+				1DEF0B76223EDEE30015C2C3 /* CheckButtons.swift in Sources */,
+				1DEF0B71223ED9E10015C2C3 /* FilterCardVC.swift in Sources */,
+				1DEC0F332242C57F00B7CDC4 /* TriangleView.swift in Sources */,
+				1DD1D6122241C10600A86D75 /* SearchAnnotation.swift in Sources */,
+				1D67CE4A223C426B004DD439 /* Extension+Foundation.swift in Sources */,
+				1D8A868C223C539800A939EE /* MapVC.swift in Sources */,
+				1D4E0D8A223EE51E009F09FA /* SelectableButton.swift in Sources */,
+				1D79C628223BCA4A00EEC951 /* AppDelegate.swift in Sources */,
+				1D8A8690223C563900A939EE /* SignUpVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1D79C62B223BCA4A00EEC951 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D79C62C223BCA4A00EEC951 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1D79C630223BCA4B00EEC951 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D79C631223BCA4B00EEC951 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D79C634223BCA4B00EEC951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D79C635223BCA4B00EEC951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D79C637223BCA4B00EEC951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB982A26CCA8E0316113D76A /* Pods-RealEstateAgency.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RealEstateAgency/RealEstateAgency.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P74G2ZK6A;
+				INFOPLIST_FILE = "$(SRCROOT)/RealEstateAgency/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsmedium.education.RealEstateAgency;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D79C638223BCA4B00EEC951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6D4B6FECA3527487D1BE2E8 /* Pods-RealEstateAgency.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RealEstateAgency/RealEstateAgency.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P74G2ZK6A;
+				INFOPLIST_FILE = "$(SRCROOT)/RealEstateAgency/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsmedium.education.RealEstateAgency;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D79C61F223BCA4900EEC951 /* Build configuration list for PBXProject "RealEstateAgency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D79C634223BCA4B00EEC951 /* Debug */,
+				1D79C635223BCA4B00EEC951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D79C636223BCA4B00EEC951 /* Build configuration list for PBXNativeTarget "RealEstateAgency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D79C637223BCA4B00EEC951 /* Debug */,
+				1D79C638223BCA4B00EEC951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D79C61C223BCA4900EEC951 /* Project object */;
+}

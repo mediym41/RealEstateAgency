@@ -1,0 +1,1461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X2F-SM-6zu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Museo Cyrl 500 2.otf">
+            <string>MuseoCyrl-500</string>
+        </array>
+        <array key="Museo Cyrl 700 2.otf">
+            <string>MuseoCyrl-700</string>
+        </array>
+        <array key="MuseoSans_500.otf">
+            <string>MuseoSans-500</string>
+        </array>
+        <array key="MuseoSans_700.otf">
+            <string>MuseoSans-700</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--MapVC-->
+        <scene sceneID="nEK-fo-wOk">
+            <objects>
+                <viewController storyboardIdentifier="MapVC" id="Za7-MY-4Uu" customClass="MapVC" customModule="RealEstateAgency" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Nb-qh-kxn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4a9-Dn-RHq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Za7-MY-4Uu" id="Cqz-H5-LQ3"/>
+                                </connections>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3p-lP-Opl">
+                                <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                                <color key="backgroundColor" red="0.97216242551803589" green="0.96126705408096313" blue="0.93332964181900024" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZMO-c3-I7O" firstAttribute="trailing" secondItem="4a9-Dn-RHq" secondAttribute="trailing" id="17e-C9-gnX"/>
+                            <constraint firstItem="4a9-Dn-RHq" firstAttribute="leading" secondItem="ZMO-c3-I7O" secondAttribute="leading" id="4wa-Aj-hqI"/>
+                            <constraint firstItem="4a9-Dn-RHq" firstAttribute="top" secondItem="9Nb-qh-kxn" secondAttribute="top" id="67u-Tz-kG5"/>
+                            <constraint firstItem="O3p-lP-Opl" firstAttribute="top" secondItem="4a9-Dn-RHq" secondAttribute="bottom" id="6Ww-Xt-IO0"/>
+                            <constraint firstItem="ZMO-c3-I7O" firstAttribute="bottom" secondItem="4a9-Dn-RHq" secondAttribute="bottom" id="9TI-as-GpM"/>
+                            <constraint firstItem="ZMO-c3-I7O" firstAttribute="trailing" secondItem="O3p-lP-Opl" secondAttribute="trailing" id="IN4-gX-xIw"/>
+                            <constraint firstAttribute="bottom" secondItem="O3p-lP-Opl" secondAttribute="bottom" id="mRp-0U-ngR"/>
+                            <constraint firstItem="O3p-lP-Opl" firstAttribute="leading" secondItem="ZMO-c3-I7O" secondAttribute="leading" id="tOC-gt-pSk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZMO-c3-I7O"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomSafeAreaBorder" destination="O3p-lP-Opl" id="dOu-ZV-1YE"/>
+                        <outlet property="mapView" destination="4a9-Dn-RHq" id="iY2-Au-8q8"/>
+                        <outlet property="searchDisplayController" destination="T2q-KR-6A2" id="eLM-XV-Nmy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQZ-Fa-xAM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="hkX-Fl-vnH">
+                    <connections>
+                        <outlet property="delegate" destination="Za7-MY-4Uu" id="Ei4-mo-Oc5"/>
+                        <outlet property="searchContentsController" destination="Za7-MY-4Uu" id="Ut2-k3-gPE"/>
+                        <outlet property="searchResultsDataSource" destination="Za7-MY-4Uu" id="v63-Xr-s6d"/>
+                        <outlet property="searchResultsDelegate" destination="Za7-MY-4Uu" id="XRk-6f-2LH"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="T2q-KR-6A2">
+                    <connections>
+                        <outlet property="delegate" destination="Za7-MY-4Uu" id="wmD-SL-vNB"/>
+                        <outlet property="searchContentsController" destination="Za7-MY-4Uu" id="h7i-9d-zpe"/>
+                        <outlet property="searchResultsDataSource" destination="Za7-MY-4Uu" id="ETe-Ah-B3L"/>
+                        <outlet property="searchResultsDelegate" destination="Za7-MY-4Uu" id="OX2-2x-8nr"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1336.8" y="80.50974512743629"/>
+        </scene>
+        <!--DetailedVC-->
+        <scene sceneID="zsw-Zk-yzU">
+            <objects>
+                <viewController storyboardIdentifier="DetailedVC" id="pQp-br-NRg" customClass="DetailedVC" customModule="RealEstateAgency" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6gk-XX-VzP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Oaa-Fn-V0q">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="WRC-cP-d75"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="AjZ-OW-0AY">
+                                <rect key="frame" x="20" y="285" width="335" height="226"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Id8-qF-qo3">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="40"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="UAY-DV-qG7">
+                                                <rect key="frame" x="0.0" y="0.0" width="167.5" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLo-9C-7hv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="18"/>
+                                                        <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="15"/>
+                                                        <color key="textColor" red="0.45882352939999999" green="0.47450980390000003" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Al-TF-1ky">
+                                                        <rect key="frame" x="0.0" y="18" width="167.5" height="22"/>
+                                                        <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="kcZ-Pj-sfc">
+                                                <rect key="frame" x="167.5" y="0.0" width="167.5" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buy type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLr-qj-Cv4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="18"/>
+                                                        <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="15"/>
+                                                        <color key="textColor" red="0.45882352939999999" green="0.47450980390000003" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZk-ZH-K65">
+                                                        <rect key="frame" x="0.0" y="18" width="167.5" height="22"/>
+                                                        <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qf9-rH-moy">
+                                        <rect key="frame" x="0.0" y="62" width="335" height="40"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="hdo-2b-rRr">
+                                                <rect key="frame" x="0.0" y="0.0" width="167.5" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0R6-AB-LuK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="18"/>
+                                                        <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="15"/>
+                                                        <color key="textColor" red="0.45882352939999999" green="0.47450980390000003" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dug-pD-Ifr">
+                                                        <rect key="frame" x="0.0" y="18" width="167.5" height="22"/>
+                                                        <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="s6Y-Ip-cvh">
+                                                <rect key="frame" x="167.5" y="0.0" width="167.5" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Square" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpw-WG-e81">
+                                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="18"/>
+                                                        <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="15"/>
+                                                        <color key="textColor" red="0.45882352939999999" green="0.47450980390000003" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Kd-UE-SQg">
+                                                        <rect key="frame" x="0.0" y="18" width="167.5" height="22"/>
+                                                        <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fS7-00-iR8">
+                                        <rect key="frame" x="0.0" y="124" width="335" height="40"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ZcA-Y1-0nG">
+                                                <rect key="frame" x="0.0" y="0.0" width="167.5" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Floor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEy-f2-hrM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="18"/>
+                                                        <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="15"/>
+                                                        <color key="textColor" red="0.45882352939999999" green="0.47450980390000003" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUl-Ex-8Nj">
+                                                        <rect key="frame" x="0.0" y="18" width="167.5" height="22"/>
+                                                        <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="qb3-hg-Aqb">
+                                                <rect key="frame" x="167.5" y="0.0" width="167.5" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rooms" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWL-Js-S3W">
+                                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="18"/>
+                                                        <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="15"/>
+                                                        <color key="textColor" red="0.45882352939999999" green="0.47450980390000003" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeU-ha-6bA">
+                                                        <rect key="frame" x="0.0" y="18" width="167.5" height="22"/>
+                                                        <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="spa-bx-riS">
+                                        <rect key="frame" x="0.0" y="186" width="335" height="40"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ac6-Zt-Mbz">
+                                                <rect key="frame" x="0.0" y="0.0" width="167.5" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twc-io-VvW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="18"/>
+                                                        <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="15"/>
+                                                        <color key="textColor" red="0.45882352939999999" green="0.47450980390000003" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solomenskiy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XX-jN-ILn">
+                                                        <rect key="frame" x="0.0" y="18" width="167.5" height="22"/>
+                                                        <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="i3y-rl-ual">
+                                                <rect key="frame" x="167.5" y="0.0" width="167.5" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6na-Ho-8fH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="18"/>
+                                                        <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="15"/>
+                                                        <color key="textColor" red="0.45882352939999999" green="0.47450980390000003" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCu-bb-z11">
+                                                        <rect key="frame" x="0.0" y="18" width="167.5" height="22"/>
+                                                        <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pr-8f-H7e">
+                                <rect key="frame" x="20" y="235" width="335" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="2je-ie-OhH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuseoCyrl-500" family="Museo Cyrl" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgB-wB-h5j">
+                                <rect key="frame" x="0.0" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PAe-b1-ahg"/>
+                                    <constraint firstAttribute="width" constant="50" id="qI7-ow-Kqi"/>
+                                </constraints>
+                                <state key="normal" image="BackButton"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="pQp-br-NRg" eventType="touchUpInside" id="WmR-iZ-E4U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgv-58-nq3">
+                                <rect key="frame" x="20" y="597" width="335" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.83137254900000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aaX-Nb-OQG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuseoCyrl-700" family="Museo Cyrl" pointSize="17"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" cyan="0.01" magenta="0.1683975905" yellow="0.5982266665" black="0.554959168" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signInButtonPressed:" destination="D96-U4-uOk" eventType="touchUpInside" id="1NA-Tv-Kxb"/>
+                                    <action selector="submitButtonPressed:" destination="pQp-br-NRg" eventType="touchUpInside" id="ogX-w7-EeT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AhI-ih-rzX" firstAttribute="trailing" secondItem="AjZ-OW-0AY" secondAttribute="trailing" constant="20" id="D7L-Oi-jWp"/>
+                            <constraint firstItem="AhI-ih-rzX" firstAttribute="trailing" secondItem="9pr-8f-H7e" secondAttribute="trailing" constant="20" id="DBi-G1-Nib"/>
+                            <constraint firstItem="9pr-8f-H7e" firstAttribute="leading" secondItem="AhI-ih-rzX" secondAttribute="leading" constant="20" id="DMe-u9-AO5"/>
+                            <constraint firstItem="AjZ-OW-0AY" firstAttribute="top" secondItem="9pr-8f-H7e" secondAttribute="bottom" constant="25" id="G9Z-3o-Scg"/>
+                            <constraint firstItem="Vgv-58-nq3" firstAttribute="leading" secondItem="AhI-ih-rzX" secondAttribute="leading" constant="20" id="HXg-vs-xeh"/>
+                            <constraint firstAttribute="trailing" secondItem="Oaa-Fn-V0q" secondAttribute="trailing" id="Tev-4t-ZF2"/>
+                            <constraint firstItem="dgB-wB-h5j" firstAttribute="leading" secondItem="AhI-ih-rzX" secondAttribute="leading" id="XsM-eX-6VO"/>
+                            <constraint firstItem="AhI-ih-rzX" firstAttribute="bottom" secondItem="Vgv-58-nq3" secondAttribute="bottom" constant="20" id="Ydp-nH-sym"/>
+                            <constraint firstItem="AjZ-OW-0AY" firstAttribute="leading" secondItem="AhI-ih-rzX" secondAttribute="leading" constant="20" id="c8i-kA-7U4"/>
+                            <constraint firstItem="AhI-ih-rzX" firstAttribute="trailing" secondItem="Vgv-58-nq3" secondAttribute="trailing" constant="20" id="ipK-pg-cwa"/>
+                            <constraint firstItem="Oaa-Fn-V0q" firstAttribute="leading" secondItem="AhI-ih-rzX" secondAttribute="leading" id="sfB-6A-65f"/>
+                            <constraint firstItem="dgB-wB-h5j" firstAttribute="top" secondItem="AhI-ih-rzX" secondAttribute="top" id="vTp-dd-fn4"/>
+                            <constraint firstItem="Oaa-Fn-V0q" firstAttribute="top" secondItem="6gk-XX-VzP" secondAttribute="top" id="vUc-re-rA2"/>
+                            <constraint firstItem="9pr-8f-H7e" firstAttribute="top" secondItem="Oaa-Fn-V0q" secondAttribute="bottom" constant="15" id="vaz-QL-a9f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AhI-ih-rzX"/>
+                    </view>
+                    <connections>
+                        <outlet property="buyTypeLabel" destination="jZk-ZH-K65" id="vN2-xt-8o7"/>
+                        <outlet property="costLabel" destination="Dug-pD-Ifr" id="Dos-u4-NaJ"/>
+                        <outlet property="dateLabel" destination="gCu-bb-z11" id="BVD-fb-aAJ"/>
+                        <outlet property="floorLabel" destination="yUl-Ex-8Nj" id="EXf-1G-jhD"/>
+                        <outlet property="houseImageView" destination="Oaa-Fn-V0q" id="268-Ue-n13"/>
+                        <outlet property="regionLabel" destination="8XX-jN-ILn" id="TQj-vw-raQ"/>
+                        <outlet property="roomsLabel" destination="eeU-ha-6bA" id="2go-jn-YCd"/>
+                        <outlet property="squareLabel" destination="8Kd-UE-SQg" id="O1q-Ov-kAd"/>
+                        <outlet property="streetLabel" destination="9pr-8f-H7e" id="rQM-t7-0j1"/>
+                        <outlet property="submitButton" destination="Vgv-58-nq3" id="Klv-LB-Eid"/>
+                        <outlet property="typeLabel" destination="5Al-TF-1ky" id="JRr-5x-erj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cVJ-B4-OMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2214" y="81"/>
+        </scene>
+        <!--Location Search Table-->
+        <scene sceneID="eT0-yR-GI6">
+            <objects>
+                <tableViewController storyboardIdentifier="LocationSearchTable" id="fPv-ld-r2w" customClass="LocationSearchTable" customModule="RealEstateAgency" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BKj-i7-a1i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="Agr-82-Az5" detailTextLabel="GlS-ld-LBD" style="IBUITableViewCellStyleSubtitle" id="FIk-a5-71B">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FIk-a5-71B" id="Pzg-IN-p6e">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Agr-82-Az5">
+                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GlS-ld-LBD">
+                                            <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fPv-ld-r2w" id="cZx-5Z-hMV"/>
+                            <outlet property="delegate" destination="fPv-ld-r2w" id="drv-3Q-oNw"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VSY-ge-hbD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1337" y="-624"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ydE-0B-aPL">
+            <objects>
+                <navigationController id="Kab-bh-Blx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Nh5-Jp-BcM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.83137254900000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="1" green="0.83137254900000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="D96-U4-uOk" kind="relationship" relationship="rootViewController" id="iMW-Er-Hqv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mnj-Us-fFj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-274" y="81"/>
+        </scene>
+        <!--Sign InVC-->
+        <scene sceneID="2gE-CM-5VS">
+            <objects>
+                <viewController storyboardIdentifier="SignInVC" id="D96-U4-uOk" customClass="SignInVC" customModule="RealEstateAgency" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iMS-33-yJ1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CityBackground2" translatesAutoresizingMaskIntoConstraints="NO" id="dPd-6P-BEY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="vRW-7l-HjP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9l0-Wi-BT7">
+                                <rect key="frame" x="37.5" y="301" width="300" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="gMl-l2-Q6r"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Dream Town is the largest real estate agency in Kiev serving the needs of Kiev expat community.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.67843137254901964" green="0.69019607843137254" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="16" name="MuseoSans-500"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4.5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dream Town" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gnq-cw-ptm">
+                                <rect key="frame" x="92.5" y="232" width="190.5" height="38.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38.5" id="y6e-0R-AhL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuseoCyrl-500" family="Museo Cyrl" pointSize="32"/>
+                                <color key="textColor" red="0.15686274509803921" green="0.18431372549019609" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gig-bR-3O0">
+                                <rect key="frame" x="0.0" y="352" width="375" height="251"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="eud-zL-YEG">
+                                        <rect key="frame" x="20" y="0.5" width="335" height="250"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JBn-Wh-ZCJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="120"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u6y-oJ-HfY" customClass="UnderlinedTextField" customModule="RealEstateAgency" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="Za6-nz-qGk"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="0.15686274509803921" green="0.18431372549019609" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                                <color key="value" red="0.89019607840000003" green="0.8980392157" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="lineThickness">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="plcColor">
+                                                                <color key="value" red="0.6588235294" green="0.67450980390000004" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                                                <color key="value" red="0.71764705880000002" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="errorFontSize">
+                                                                <real key="value" value="12"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="errorFontName" value="MuseoSans-300"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingHorizontal">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                                <real key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="kerningValue">
+                                                                <real key="value" value="0.29999999999999999"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="D96-U4-uOk" id="5Xz-uC-vuK"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FcA-sR-1dd" customClass="UnderlinedTextField" customModule="RealEstateAgency" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="60" width="335" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="65f-FW-5Xb"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="0.15686274509803921" green="0.18431372549019609" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                                <color key="value" red="0.89019607840000003" green="0.8980392157" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="lineThickness">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="plcColor">
+                                                                <color key="value" red="0.6588235294" green="0.67450980390000004" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                                                <color key="value" red="0.71764705880000002" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="errorFontSize">
+                                                                <real key="value" value="12"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="errorFontName" value="MuseoSans-300"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingHorizontal">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                                <real key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="kerningValue">
+                                                                <real key="value" value="0.29999999999999999"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="D96-U4-uOk" id="jeR-dq-sPD"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Cbe-Kl-gjN">
+                                                <rect key="frame" x="0.0" y="150" width="335" height="100"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWv-7f-vNi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                        <color key="backgroundColor" red="0.9137254901960784" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="E2C-ss-qw9"/>
+                                                            <constraint firstAttribute="height" constant="50" id="Lm2-DX-A6g"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="MuseoCyrl-700" family="Museo Cyrl" pointSize="17"/>
+                                                        <state key="normal" title="Sign in">
+                                                            <color key="titleColor" red="0.45882352941176469" green="0.47450980392156861" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="signInButtonPressed:" destination="D96-U4-uOk" eventType="touchUpInside" id="IUQ-sr-2SY"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjF-S2-4p3" userLabel="Wrapper">
+                                                        <rect key="frame" x="0.0" y="50" width="335" height="50"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="BdE-Io-01h">
+                                                                <rect key="frame" x="65" y="11" width="205" height="28"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an acount yet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHI-pI-utT">
+                                                                        <rect key="frame" x="0.0" y="6" width="157" height="16"/>
+                                                                        <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="13"/>
+                                                                        <color key="textColor" red="0.6705882353" green="0.6705882353" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqJ-7R-jNq">
+                                                                        <rect key="frame" x="160" y="0.0" width="45" height="28"/>
+                                                                        <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="13"/>
+                                                                        <state key="normal" title="Sign up">
+                                                                            <color key="titleColor" red="0.45882352941176469" green="0.47450980392156861" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="signUpButtonPressed:" destination="D96-U4-uOk" eventType="touchUpInside" id="5Gt-s0-tpZ"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="BdE-Io-01h" firstAttribute="centerX" secondItem="cjF-S2-4p3" secondAttribute="centerX" id="j5C-zF-wHp"/>
+                                                            <constraint firstItem="BdE-Io-01h" firstAttribute="centerY" secondItem="cjF-S2-4p3" secondAttribute="centerY" id="r47-Mx-470"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="251" id="50x-pj-IJ0"/>
+                                    <constraint firstItem="eud-zL-YEG" firstAttribute="centerX" secondItem="Gig-bR-3O0" secondAttribute="centerX" id="58f-ja-OTx"/>
+                                    <constraint firstAttribute="trailing" secondItem="eud-zL-YEG" secondAttribute="trailing" constant="20" id="6rk-Du-lCV"/>
+                                    <constraint firstItem="eud-zL-YEG" firstAttribute="leading" secondItem="Gig-bR-3O0" secondAttribute="leading" constant="20" id="JVo-P1-Xoq"/>
+                                    <constraint firstItem="eud-zL-YEG" firstAttribute="centerY" secondItem="Gig-bR-3O0" secondAttribute="centerY" priority="999" id="Xjy-ne-5t3"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="eud-zL-YEG" secondAttribute="bottom" constant="-5" id="aLZ-HF-02q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DmC-EE-1CE" firstAttribute="bottom" secondItem="Gig-bR-3O0" secondAttribute="bottom" id="0Nt-JI-cqq"/>
+                            <constraint firstItem="DmC-EE-1CE" firstAttribute="trailing" secondItem="Gig-bR-3O0" secondAttribute="trailing" id="0QW-Bs-j2u"/>
+                            <constraint firstItem="dPd-6P-BEY" firstAttribute="top" secondItem="iMS-33-yJ1" secondAttribute="top" id="3zm-tY-3d2"/>
+                            <constraint firstItem="9l0-Wi-BT7" firstAttribute="centerX" secondItem="iMS-33-yJ1" secondAttribute="centerX" id="MHL-9v-UU8"/>
+                            <constraint firstItem="Gnq-cw-ptm" firstAttribute="top" secondItem="dPd-6P-BEY" secondAttribute="bottom" priority="999" constant="-18" id="Ohb-Ib-eeb"/>
+                            <constraint firstItem="Gig-bR-3O0" firstAttribute="top" relation="greaterThanOrEqual" secondItem="9l0-Wi-BT7" secondAttribute="bottom" id="PpT-0g-2Jj"/>
+                            <constraint firstItem="Gig-bR-3O0" firstAttribute="top" secondItem="9l0-Wi-BT7" secondAttribute="bottom" priority="999" constant="20" id="PsX-Wo-IiH"/>
+                            <constraint firstItem="Gnq-cw-ptm" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dPd-6P-BEY" secondAttribute="bottom" constant="-80" id="QKe-Hp-CLs"/>
+                            <constraint firstItem="9l0-Wi-BT7" firstAttribute="top" secondItem="Gnq-cw-ptm" secondAttribute="bottom" priority="999" constant="30.5" id="Zra-Gq-Ptx"/>
+                            <constraint firstItem="Gig-bR-3O0" firstAttribute="leading" secondItem="DmC-EE-1CE" secondAttribute="leading" id="eRN-wa-jS1"/>
+                            <constraint firstItem="dPd-6P-BEY" firstAttribute="leading" secondItem="DmC-EE-1CE" secondAttribute="leading" id="fFo-oP-5kI"/>
+                            <constraint firstItem="dPd-6P-BEY" firstAttribute="trailing" secondItem="DmC-EE-1CE" secondAttribute="trailing" id="hXR-nS-0BX"/>
+                            <constraint firstItem="9l0-Wi-BT7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Gnq-cw-ptm" secondAttribute="bottom" constant="10" id="ifx-y7-a36"/>
+                            <constraint firstItem="9l0-Wi-BT7" firstAttribute="width" secondItem="iMS-33-yJ1" secondAttribute="width" multiplier="0.8" id="vSd-Pw-O6l"/>
+                            <constraint firstItem="Gnq-cw-ptm" firstAttribute="centerX" secondItem="iMS-33-yJ1" secondAttribute="centerX" id="ybQ-Bf-h0M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DmC-EE-1CE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ffK-pi-hgB"/>
+                    <connections>
+                        <outlet property="emailField" destination="u6y-oJ-HfY" id="dPz-80-TaX"/>
+                        <outlet property="passwordField" destination="FcA-sR-1dd" id="epG-PB-mss"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kaw-oT-xOu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504.80000000000001" y="80.50974512743629"/>
+        </scene>
+        <!--Sign UpVC-->
+        <scene sceneID="6JP-uB-eNq">
+            <objects>
+                <viewController storyboardIdentifier="SignUpVC" id="ddo-v2-C9m" customClass="SignUpVC" customModule="RealEstateAgency" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tRe-PT-y1l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CityBackground1" translatesAutoresizingMaskIntoConstraints="NO" id="5ga-eN-dx0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="Y84-DT-FmC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovr-ju-WUH">
+                                <rect key="frame" x="131.5" y="232" width="112" height="38.5"/>
+                                <fontDescription key="fontDescription" name="MuseoCyrl-500" family="Museo Cyrl" pointSize="32"/>
+                                <color key="textColor" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7u6-Ye-heO">
+                                <rect key="frame" x="20" y="290.5" width="335" height="180"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZyJ-GJ-kQu" customClass="UnderlinedTextField" customModule="RealEstateAgency" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="uIt-hU-UFJ"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                <color key="value" red="0.89019607840000003" green="0.8980392157" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineThickness">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="plcColor">
+                                                <color key="value" red="0.6588235294" green="0.67450980390000004" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                                <color key="value" red="0.71764705880000002" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="errorFontSize">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="errorFontName" value="MuseoSans-300"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingHorizontal">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="kerningValue">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="ddo-v2-C9m" id="zcc-oh-Fby"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bfv-NO-eJ0" customClass="UnderlinedTextField" customModule="RealEstateAgency" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="60" width="335" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="22Z-Vm-cWX"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                <color key="value" red="0.89019607840000003" green="0.8980392157" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineThickness">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="plcColor">
+                                                <color key="value" red="0.6588235294" green="0.67450980390000004" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                                <color key="value" red="0.71764705880000002" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="errorFontSize">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="errorFontName" value="MuseoSans-300"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingHorizontal">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="kerningValue">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="ddo-v2-C9m" id="BF4-aB-4AJ"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bcn-LA-jcL" customClass="UnderlinedTextField" customModule="RealEstateAgency" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="120" width="335" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Pny-LJ-pl6"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                <color key="value" red="0.89019607840000003" green="0.8980392157" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineThickness">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="plcColor">
+                                                <color key="value" red="0.6588235294" green="0.67450980390000004" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                                <color key="value" red="0.71764705880000002" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="errorFontSize">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="errorFontName" value="MuseoSans-300"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingHorizontal">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="kerningValue">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="ddo-v2-C9m" id="iNy-pp-f8D"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="Fa9-0h-tkI"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwY-ed-FNl">
+                                <rect key="frame" x="20" y="597" width="335" height="50"/>
+                                <color key="backgroundColor" red="0.9137254901960784" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ary-qS-X2c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuseoCyrl-700" family="Museo Cyrl" pointSize="17"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" red="0.45882352939999999" green="0.47450980390000003" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signUpButtonPressed:" destination="ddo-v2-C9m" eventType="touchUpInside" id="V7B-fl-635"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydG-AC-hwg">
+                                <rect key="frame" x="0.0" y="20" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="XDc-gS-PCD"/>
+                                    <constraint firstAttribute="width" constant="40" id="rsu-ey-JHG"/>
+                                </constraints>
+                                <state key="normal" image="BackArrow"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="ddo-v2-C9m" eventType="touchUpInside" id="9yJ-2t-2SR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wwY-ed-FNl" firstAttribute="leading" secondItem="Sme-J5-J9X" secondAttribute="leading" constant="20" id="4iK-go-5Dr"/>
+                            <constraint firstItem="ovr-ju-WUH" firstAttribute="centerX" secondItem="tRe-PT-y1l" secondAttribute="centerX" id="Bdi-3L-eZt"/>
+                            <constraint firstItem="ovr-ju-WUH" firstAttribute="top" secondItem="5ga-eN-dx0" secondAttribute="bottom" constant="-18" id="D1P-Lj-3aF"/>
+                            <constraint firstItem="5ga-eN-dx0" firstAttribute="leading" secondItem="Sme-J5-J9X" secondAttribute="leading" id="KsU-gb-TOx"/>
+                            <constraint firstItem="Sme-J5-J9X" firstAttribute="trailing" secondItem="7u6-Ye-heO" secondAttribute="trailing" constant="20" id="Lxr-w0-wPe"/>
+                            <constraint firstItem="Sme-J5-J9X" firstAttribute="bottom" secondItem="wwY-ed-FNl" secondAttribute="bottom" constant="20" id="N0K-Jc-4yA"/>
+                            <constraint firstItem="7u6-Ye-heO" firstAttribute="leading" secondItem="Sme-J5-J9X" secondAttribute="leading" constant="20" id="Q3F-U5-cHf"/>
+                            <constraint firstItem="Sme-J5-J9X" firstAttribute="trailing" secondItem="wwY-ed-FNl" secondAttribute="trailing" constant="20" id="Tk6-z1-KQF"/>
+                            <constraint firstItem="ydG-AC-hwg" firstAttribute="leading" secondItem="Sme-J5-J9X" secondAttribute="leading" id="mcO-Zb-0et"/>
+                            <constraint firstItem="ydG-AC-hwg" firstAttribute="top" secondItem="Sme-J5-J9X" secondAttribute="top" id="rSK-aZ-yO1"/>
+                            <constraint firstItem="5ga-eN-dx0" firstAttribute="top" secondItem="tRe-PT-y1l" secondAttribute="top" id="uQs-G3-3L4"/>
+                            <constraint firstItem="7u6-Ye-heO" firstAttribute="top" secondItem="ovr-ju-WUH" secondAttribute="bottom" constant="20" id="yUK-o6-AVE"/>
+                            <constraint firstItem="5ga-eN-dx0" firstAttribute="trailing" secondItem="Sme-J5-J9X" secondAttribute="trailing" id="z30-sR-kJW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Sme-J5-J9X"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="q3f-CD-f1F"/>
+                    <connections>
+                        <outlet property="emailField" destination="ZyJ-GJ-kQu" id="YDF-QT-2al"/>
+                        <outlet property="passwordField" destination="Bfv-NO-eJ0" id="zJR-fs-ShK"/>
+                        <outlet property="repeatedPasswordField" destination="bcn-LA-jcL" id="gnX-sU-Nim"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eCV-mp-RMw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="505" y="788"/>
+        </scene>
+        <!--AddingVC-->
+        <scene sceneID="6i9-aC-p2B">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g3Z-rX-IW3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="AddingVC" id="X2F-SM-6zu" customClass="AddingVC" customModule="RealEstateAgency" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U9n-LU-tRl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="89y-q5-gH1">
+                                <rect key="frame" x="0.0" y="20" width="375" height="980"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bph-0s-XL3" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="968.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adding real estate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hh-Xt-Xr9">
+                                                <rect key="frame" x="20" y="20" width="335" height="38.5"/>
+                                                <fontDescription key="fontDescription" name="MuseoCyrl-500" family="Museo Cyrl" pointSize="32"/>
+                                                <color key="textColor" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="juG-hH-j5V">
+                                                <rect key="frame" x="20" y="298.5" width="335" height="50"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5JS-Nb-1d3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NP-sR-Aam" customClass="SelectableButton" customModule="RealEstateAgency" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="167.5" height="50"/>
+                                                                <color key="backgroundColor" red="1" green="0.83137254900000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="20"/>
+                                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" title="House">
+                                                                    <color key="titleColor" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                                                        <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                                                        <color key="value" red="1" green="0.83137254900000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                                                        <color key="value" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="normalTextColor">
+                                                                        <color key="value" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="typeButtonPressed:" destination="X2F-SM-6zu" eventType="touchUpInside" id="TfW-iB-tg3"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svx-fB-o44" customClass="SelectableButton" customModule="RealEstateAgency" customModuleProvider="target">
+                                                                <rect key="frame" x="167.5" y="0.0" width="167.5" height="50"/>
+                                                                <color key="backgroundColor" red="1" green="0.83137254900000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="20"/>
+                                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" title="Flat">
+                                                                    <color key="titleColor" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                </state>
+                                                                <state key="selected">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <state key="highlighted">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                                                        <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                                                        <color key="value" red="1" green="0.83137254900000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                                                        <color key="value" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="normalTextColor">
+                                                                        <color key="value" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="typeButtonPressed:" destination="X2F-SM-6zu" eventType="touchUpInside" id="zxR-fT-uQm"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="5JS-Nb-1d3" secondAttribute="trailing" id="7pb-Tj-Z3Z"/>
+                                                    <constraint firstAttribute="height" constant="50" id="SqI-tm-8l6"/>
+                                                    <constraint firstItem="5JS-Nb-1d3" firstAttribute="leading" secondItem="juG-hH-j5V" secondAttribute="leading" id="ayf-AQ-GfB"/>
+                                                    <constraint firstItem="5JS-Nb-1d3" firstAttribute="top" secondItem="juG-hH-j5V" secondAttribute="top" id="wcs-gj-Khp"/>
+                                                    <constraint firstAttribute="bottom" secondItem="5JS-Nb-1d3" secondAttribute="bottom" id="wun-Iv-xZA"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kiB-QG-h7f">
+                                                <rect key="frame" x="20" y="368.5" width="335" height="50"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZUi-Qv-b77">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5L-DD-VF5" customClass="SelectableButton" customModule="RealEstateAgency" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="167.5" height="50"/>
+                                                                <color key="backgroundColor" red="1" green="0.83137254900000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="20"/>
+                                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" title="Rent">
+                                                                    <color key="titleColor" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                                                        <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                                                        <color key="value" red="1" green="0.83137254900000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                                                        <color key="value" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="normalTextColor">
+                                                                        <color key="value" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buyTypeButtonPressed:" destination="X2F-SM-6zu" eventType="touchUpInside" id="eRV-Sv-qWg"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQi-fd-TBo" customClass="SelectableButton" customModule="RealEstateAgency" customModuleProvider="target">
+                                                                <rect key="frame" x="167.5" y="0.0" width="167.5" height="50"/>
+                                                                <color key="backgroundColor" red="1" green="0.83137254900000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="20"/>
+                                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" title="Sale">
+                                                                    <color key="titleColor" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                </state>
+                                                                <state key="selected">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <state key="highlighted">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                                                        <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                                                        <color key="value" red="1" green="0.83137254900000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                                                        <color key="value" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="normalTextColor">
+                                                                        <color key="value" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buyTypeButtonPressed:" destination="X2F-SM-6zu" eventType="touchUpInside" id="oZS-Fm-LdS"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="RNT-gq-c1h"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ZUi-Qv-b77" secondAttribute="bottom" id="VRq-l0-RJE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ZUi-Qv-b77" secondAttribute="trailing" id="Zh2-PN-CS2"/>
+                                                    <constraint firstItem="ZUi-Qv-b77" firstAttribute="top" secondItem="kiB-QG-h7f" secondAttribute="top" id="rZS-0r-9Uq"/>
+                                                    <constraint firstItem="ZUi-Qv-b77" firstAttribute="leading" secondItem="kiB-QG-h7f" secondAttribute="leading" id="uYH-HO-njH"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nickname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ziW-NK-p2m" customClass="UnderlinedTextField" customModule="RealEstateAgency" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="438.5" width="335" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="Q5y-6H-bv7"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                        <color key="value" red="0.89019607840000003" green="0.8980392157" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineThickness">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="plcColor">
+                                                        <color key="value" red="0.6588235294" green="0.67450980390000004" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                                        <color key="value" red="0.71764705880000002" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="errorFontSize">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="errorFontName" value="MuseoSans-300"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingHorizontal">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="kerningValue">
+                                                        <real key="value" value="0.29999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Region" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qfH-eN-WHa" customClass="UnderlinedTextField" customModule="RealEstateAgency" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="498.5" width="335" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="TJN-bj-1CX"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                        <color key="value" red="0.89019607840000003" green="0.8980392157" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineThickness">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="plcColor">
+                                                        <color key="value" red="0.6588235294" green="0.67450980390000004" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                                        <color key="value" red="0.71764705880000002" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="errorFontSize">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="errorFontName" value="MuseoSans-300"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingHorizontal">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="kerningValue">
+                                                        <real key="value" value="0.29999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Street" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cys-f6-UMh" customClass="UnderlinedTextField" customModule="RealEstateAgency" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="558.5" width="335" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="qXu-nu-nWi"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                        <color key="value" red="0.89019607840000003" green="0.8980392157" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineThickness">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="plcColor">
+                                                        <color key="value" red="0.6588235294" green="0.67450980390000004" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                                        <color key="value" red="0.71764705880000002" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="errorFontSize">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="errorFontName" value="MuseoSans-300"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingHorizontal">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="kerningValue">
+                                                        <real key="value" value="0.29999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yqK-Sc-WLg" customClass="UnderlinedTextField" customModule="RealEstateAgency" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="618.5" width="335" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="DIO-ow-c7D"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                        <color key="value" red="0.89019607840000003" green="0.8980392157" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineThickness">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="plcColor">
+                                                        <color key="value" red="0.6588235294" green="0.67450980390000004" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                                        <color key="value" red="0.71764705880000002" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="errorFontSize">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="errorFontName" value="MuseoSans-300"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingHorizontal">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="kerningValue">
+                                                        <real key="value" value="0.29999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rooms" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rg0-ZE-kJl" customClass="UnderlinedTextField" customModule="RealEstateAgency" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="678.5" width="335" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="UAW-mz-oyA"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                        <color key="value" red="0.89019607840000003" green="0.8980392157" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineThickness">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="plcColor">
+                                                        <color key="value" red="0.6588235294" green="0.67450980390000004" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                                        <color key="value" red="0.71764705880000002" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="errorFontSize">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="errorFontName" value="MuseoSans-300"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingHorizontal">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="kerningValue">
+                                                        <real key="value" value="0.29999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Square" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fEu-pZ-c3V" customClass="UnderlinedTextField" customModule="RealEstateAgency" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="738.5" width="335" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="kpn-NB-e0y"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                        <color key="value" red="0.89019607840000003" green="0.8980392157" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineThickness">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="plcColor">
+                                                        <color key="value" red="0.6588235294" green="0.67450980390000004" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                                        <color key="value" red="0.71764705880000002" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="errorFontSize">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="errorFontName" value="MuseoSans-300"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingHorizontal">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="kerningValue">
+                                                        <real key="value" value="0.29999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Floor" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4cJ-Ah-ESg" customClass="UnderlinedTextField" customModule="RealEstateAgency" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="798.5" width="335" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="sb8-Ap-M7w"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.15686274510000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                        <color key="value" red="0.89019607840000003" green="0.8980392157" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineThickness">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="plcColor">
+                                                        <color key="value" red="0.6588235294" green="0.67450980390000004" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                                        <color key="value" red="0.71764705880000002" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="errorFontSize">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="errorFontName" value="MuseoSans-300"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingHorizontal">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="kerningValue">
+                                                        <real key="value" value="0.29999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NkX-AO-Q2S">
+                                                <rect key="frame" x="20" y="898.5" width="335" height="50"/>
+                                                <color key="backgroundColor" red="1" green="0.83137254901960778" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="HzN-9U-GWy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="MuseoCyrl-700" family="Museo Cyrl" pointSize="17"/>
+                                                <state key="normal" title="Submit">
+                                                    <color key="titleColor" cyan="0.01" magenta="0.16839759051799774" yellow="0.59822666645050049" black="0.55495916799063216" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="signUpButtonPressed:" destination="ddo-v2-C9m" eventType="touchUpInside" id="P9D-fu-O4y"/>
+                                                    <action selector="submitButtonPressed:" destination="X2F-SM-6zu" eventType="touchUpInside" id="ZnS-vt-9oU"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NotFoundHouses" translatesAutoresizingMaskIntoConstraints="NO" id="1oE-Up-iMX">
+                                                <rect key="frame" x="20" y="88.5" width="335" height="190"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="190" id="Epf-qk-eJL"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="1oE-Up-iMX" firstAttribute="leading" secondItem="bph-0s-XL3" secondAttribute="leading" constant="20" id="0ks-2J-kEl"/>
+                                            <constraint firstItem="qfH-eN-WHa" firstAttribute="leading" secondItem="bph-0s-XL3" secondAttribute="leading" constant="20" id="6h5-Vk-KYT"/>
+                                            <constraint firstItem="fEu-pZ-c3V" firstAttribute="top" secondItem="rg0-ZE-kJl" secondAttribute="bottom" id="9HO-Ds-73I"/>
+                                            <constraint firstItem="cys-f6-UMh" firstAttribute="top" secondItem="qfH-eN-WHa" secondAttribute="bottom" id="BQv-R4-CG4"/>
+                                            <constraint firstItem="0hh-Xt-Xr9" firstAttribute="top" secondItem="bph-0s-XL3" secondAttribute="top" constant="20" id="Caq-67-q7L"/>
+                                            <constraint firstAttribute="trailing" secondItem="NkX-AO-Q2S" secondAttribute="trailing" constant="20" id="F5Q-Jk-kCz"/>
+                                            <constraint firstAttribute="trailing" secondItem="kiB-QG-h7f" secondAttribute="trailing" constant="20" id="G7J-qZ-3KM"/>
+                                            <constraint firstItem="NkX-AO-Q2S" firstAttribute="top" secondItem="4cJ-Ah-ESg" secondAttribute="bottom" constant="40" id="GCU-GH-1Ez"/>
+                                            <constraint firstAttribute="trailing" secondItem="ziW-NK-p2m" secondAttribute="trailing" constant="20" id="LP8-9M-TSS"/>
+                                            <constraint firstItem="rg0-ZE-kJl" firstAttribute="leading" secondItem="bph-0s-XL3" secondAttribute="leading" constant="20" id="LfA-Lh-Cd7"/>
+                                            <constraint firstAttribute="trailing" secondItem="juG-hH-j5V" secondAttribute="trailing" constant="20" id="LgU-9w-zfR"/>
+                                            <constraint firstAttribute="trailing" secondItem="fEu-pZ-c3V" secondAttribute="trailing" constant="20" id="LsT-Mu-FqC"/>
+                                            <constraint firstItem="cys-f6-UMh" firstAttribute="leading" secondItem="bph-0s-XL3" secondAttribute="leading" constant="20" id="O5F-bU-KC6"/>
+                                            <constraint firstAttribute="trailing" secondItem="qfH-eN-WHa" secondAttribute="trailing" constant="20" id="Q51-e5-ReE"/>
+                                            <constraint firstItem="4cJ-Ah-ESg" firstAttribute="leading" secondItem="bph-0s-XL3" secondAttribute="leading" constant="20" id="Qzy-WQ-dGS"/>
+                                            <constraint firstItem="fEu-pZ-c3V" firstAttribute="leading" secondItem="bph-0s-XL3" secondAttribute="leading" constant="20" id="RQp-68-ps0"/>
+                                            <constraint firstItem="juG-hH-j5V" firstAttribute="leading" secondItem="bph-0s-XL3" secondAttribute="leading" constant="20" id="SuS-LS-hA3"/>
+                                            <constraint firstAttribute="trailing" secondItem="rg0-ZE-kJl" secondAttribute="trailing" constant="20" id="Sxp-f2-HZI"/>
+                                            <constraint firstItem="yqK-Sc-WLg" firstAttribute="leading" secondItem="bph-0s-XL3" secondAttribute="leading" constant="20" id="Ufk-3Z-DI3"/>
+                                            <constraint firstAttribute="trailing" secondItem="1oE-Up-iMX" secondAttribute="trailing" constant="20" id="ZpC-K7-JKL"/>
+                                            <constraint firstAttribute="trailing" secondItem="yqK-Sc-WLg" secondAttribute="trailing" constant="20" id="b5g-Gi-Nol"/>
+                                            <constraint firstItem="qfH-eN-WHa" firstAttribute="top" secondItem="ziW-NK-p2m" secondAttribute="bottom" id="cUx-n6-92w"/>
+                                            <constraint firstItem="juG-hH-j5V" firstAttribute="top" secondItem="1oE-Up-iMX" secondAttribute="bottom" constant="20" id="gc0-yZ-Rc8"/>
+                                            <constraint firstItem="0hh-Xt-Xr9" firstAttribute="leading" secondItem="bph-0s-XL3" secondAttribute="leading" constant="20" id="hM3-mQ-MlT"/>
+                                            <constraint firstItem="kiB-QG-h7f" firstAttribute="leading" secondItem="bph-0s-XL3" secondAttribute="leading" constant="20" id="igc-64-8aN"/>
+                                            <constraint firstAttribute="bottom" secondItem="NkX-AO-Q2S" secondAttribute="bottom" constant="20" id="ihe-69-FyQ"/>
+                                            <constraint firstItem="ziW-NK-p2m" firstAttribute="leading" secondItem="bph-0s-XL3" secondAttribute="leading" constant="20" id="ioP-Xi-qh3"/>
+                                            <constraint firstItem="yqK-Sc-WLg" firstAttribute="top" secondItem="cys-f6-UMh" secondAttribute="bottom" id="j8M-gm-leB"/>
+                                            <constraint firstAttribute="trailing" secondItem="0hh-Xt-Xr9" secondAttribute="trailing" constant="20" id="jhL-zE-UcR"/>
+                                            <constraint firstItem="NkX-AO-Q2S" firstAttribute="leading" secondItem="bph-0s-XL3" secondAttribute="leading" constant="20" id="mj4-lP-YrU"/>
+                                            <constraint firstItem="rg0-ZE-kJl" firstAttribute="top" secondItem="yqK-Sc-WLg" secondAttribute="bottom" id="qDd-1g-bWw"/>
+                                            <constraint firstItem="kiB-QG-h7f" firstAttribute="top" secondItem="juG-hH-j5V" secondAttribute="bottom" constant="20" id="qTB-Ld-VPC"/>
+                                            <constraint firstItem="1oE-Up-iMX" firstAttribute="top" secondItem="0hh-Xt-Xr9" secondAttribute="bottom" constant="30" id="qt4-IT-VxY"/>
+                                            <constraint firstAttribute="trailing" secondItem="4cJ-Ah-ESg" secondAttribute="trailing" constant="20" id="vSl-zU-ZNl"/>
+                                            <constraint firstItem="4cJ-Ah-ESg" firstAttribute="top" secondItem="fEu-pZ-c3V" secondAttribute="bottom" id="vhW-je-OoL"/>
+                                            <constraint firstAttribute="trailing" secondItem="cys-f6-UMh" secondAttribute="trailing" constant="20" id="zQw-6L-Nze"/>
+                                            <constraint firstItem="ziW-NK-p2m" firstAttribute="top" secondItem="kiB-QG-h7f" secondAttribute="bottom" constant="20" id="zgN-qy-ehp"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bph-0s-XL3" firstAttribute="width" secondItem="89y-q5-gH1" secondAttribute="width" id="2dE-ZK-qnb"/>
+                                    <constraint firstItem="bph-0s-XL3" firstAttribute="leading" secondItem="89y-q5-gH1" secondAttribute="leading" id="JiU-8K-WZF"/>
+                                    <constraint firstItem="bph-0s-XL3" firstAttribute="top" secondItem="89y-q5-gH1" secondAttribute="top" id="h4j-3g-QtW"/>
+                                    <constraint firstAttribute="bottom" secondItem="bph-0s-XL3" secondAttribute="bottom" id="rEg-DD-giV"/>
+                                    <constraint firstAttribute="trailing" secondItem="bph-0s-XL3" secondAttribute="trailing" id="ukz-lw-XGr"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="89y-q5-gH1" firstAttribute="leading" secondItem="JhX-Wf-fXq" secondAttribute="leading" id="NFU-Rg-9i7"/>
+                            <constraint firstItem="JhX-Wf-fXq" firstAttribute="bottom" secondItem="89y-q5-gH1" secondAttribute="bottom" id="eNX-y5-J22"/>
+                            <constraint firstItem="89y-q5-gH1" firstAttribute="top" secondItem="JhX-Wf-fXq" secondAttribute="top" id="gbF-oi-IWh"/>
+                            <constraint firstItem="JhX-Wf-fXq" firstAttribute="trailing" secondItem="89y-q5-gH1" secondAttribute="trailing" id="uRi-U0-XYB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JhX-Wf-fXq"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="estateImageView" destination="1oE-Up-iMX" id="kea-P2-pZj"/>
+                        <outlet property="floorField" destination="4cJ-Ah-ESg" id="9H7-01-TGD"/>
+                        <outlet property="nicknameField" destination="ziW-NK-p2m" id="QSk-Yw-t9V"/>
+                        <outlet property="priceField" destination="yqK-Sc-WLg" id="J5o-sq-ssg"/>
+                        <outlet property="regionField" destination="qfH-eN-WHa" id="5cS-bc-cq0"/>
+                        <outlet property="roomsField" destination="rg0-ZE-kJl" id="0r6-uR-LQ1"/>
+                        <outlet property="squareField" destination="fEu-pZ-c3V" id="vFy-NG-u4c"/>
+                        <outlet property="streetField" destination="cys-f6-UMh" id="kd7-bj-rwY"/>
+                        <outletCollection property="buyTypeButtons" destination="h5L-DD-VF5" collectionClass="NSMutableArray" id="2OQ-MQ-ZHh"/>
+                        <outletCollection property="buyTypeButtons" destination="XQi-fd-TBo" collectionClass="NSMutableArray" id="B3I-f2-pFa"/>
+                        <outletCollection property="typeButtons" destination="9NP-sR-Aam" collectionClass="NSMutableArray" id="fLy-LY-Tc6"/>
+                        <outletCollection property="typeButtons" destination="svx-fB-o44" collectionClass="NSMutableArray" id="Yka-hG-9JA"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1337" y="918"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AB9-yH-ALb">
+            <objects>
+                <viewController id="G0p-3C-oJy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BA2-g5-cmt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VK8-JE-koS" customClass="TriangleView" customModule="RealEstateAgency" customModuleProvider="target">
+                                <rect key="frame" x="67.5" y="293.5" width="240" height="80"/>
+                                <color key="backgroundColor" red="0.47843137250000001" green="0.46666666670000001" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="CJz-ew-hnW"/>
+                                    <constraint firstAttribute="width" constant="240" id="e3g-ml-UsF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VK8-JE-koS" firstAttribute="centerX" secondItem="BA2-g5-cmt" secondAttribute="centerX" id="6bt-5I-92f"/>
+                            <constraint firstItem="VK8-JE-koS" firstAttribute="centerY" secondItem="BA2-g5-cmt" secondAttribute="centerY" id="USw-Xg-urj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4iN-Ij-KqB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LYO-Er-fUa">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="cQE-rb-8tV">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9RS-1k-s2I">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gGM-ti-1ES" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3372" y="1077.2113943028487"/>
+        </scene>
+        <!--TestVC-->
+        <scene sceneID="BM2-6b-pGG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2CB-i8-4lg" customClass="TestVC" customModule="RealEstateAgency" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tO5-1i-j1o">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="G0p-3C-oJy" kind="relationship" relationship="rootViewController" id="YBw-sn-Hqj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K4k-Ow-GE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2432.8000000000002" y="1077.2113943028487"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackArrow" width="20" height="14"/>
+        <image name="BackButton" width="40" height="40"/>
+        <image name="CityBackground1" width="1275" height="615"/>
+        <image name="CityBackground2" width="1348" height="610"/>
+        <image name="NotFoundHouses" width="414" height="231"/>
+        <image name="Placeholder" width="256" height="256"/>
+    </resources>
+    <color key="tintColor" red="1" green="0.83137254900000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+</document>
